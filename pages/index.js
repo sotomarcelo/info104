@@ -1,26 +1,56 @@
+import { css } from "@emotion/react";
+import navBar from "../src/navbar";
 import Link from "next/link";
 
-const Index = () => {
+const Home = () => {
   return (
-    <div>
-      <h1>H1</h1>
-      <p>
-        <b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. Maecenas
-        placerat massa nec sapien aliquam porttitor. Morbi interdum mauris sed
-        tortor cursus, vel fringilla nibh dignissim. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed nec elit id arcu dignissim suscipit sit
-        amet non ipsum. Nam molestie, justo sit amet fringilla venenatis, lorem
-        mi vulputate risus, sit amet molestie magna odio nec odio. Ut dignissim
-        gravida suscipit.
-      </p>
-      <img className="eye" src="/eye.png" alt="Eye" />
-      <p>
-        <Link href="/input">
-          <a>Go to /input</a>
+    <div
+      css={css`
+        width: 100%;
+        display: block;
+        h1 {
+          color: white;
+          text-align: center;
+          text-shadow: black 6px 6px 8px;
+          text-transform: uppercase;
+          font-size: 5vw;
+          text-align: center;
+          margin: 4;
+        }
+      `}
+    >
+      <nav>{navBar()}</nav>
+      <div></div>
+      <div>
+        <h1> MALLA-ENRUTADOR</h1>
+        <img
+          src="Asuka.gif"
+          alt=""
+          css={css`
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 15%;
+          `}
+        />
+      </div>
+      <div>
+        <Link href="/lista" passHref>
+          <a
+            css={css`
+              padding-left: 43%;
+              color: #ffffff;
+              transition: all 0.3s ease 0s;
+              :hover {
+                color: #400080;
+              }
+            `}
+          >
+            Lista de Semestres
+          </a>
         </Link>
-      </p>
+      </div>
     </div>
   );
 };
-
-export default Index;
+export default Home;

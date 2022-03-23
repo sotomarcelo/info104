@@ -1,0 +1,82 @@
+.tab-list {
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
+  justify-items: space-between;
+  background: rgb(181, 7, 107);
+  margin-top: -0%;
+  border-bottom: solid black;
+}
+
+.tab-list-item {
+  background: rgb(238, 207, 207);
+  border: solid black;
+  border-width: 1px 1px 0 1px;
+  display: inline-table;
+  list-style: none;
+  margin-bottom: -1px;
+  margin-left: 20px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.tab-list-active {
+  border: solid black;
+  background: rgba(255, 255, 255, 0.6);
+  border-width: 1px 1px 0 1px;
+}
+
+.accordion-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-title {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+
+.accordion-title:hover,
+.active {
+  background-color: #491398;
+  border: 1px solid black;
+  color: white;
+}
+
+.accordion-icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  background-color: #900a4b;
+  color: white;
+  overflow: hidden;
+  padding-right: 1%;
+  padding-left: 1%;
+  border: 1px solid black;
+  transition: max-height 0.6s ease;
+}
+
+.accordion-text {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 14px;
+}
+.MuiListItem-root {
+  background: purple;
+  color: white;
+  border: solid black;
+  margin-top: -3%;
+  margin-bottom: -3%;
+}
